@@ -5,14 +5,12 @@ export default {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter({
-      pages: 'dist',          // Vite outputs here by default
+      pages: 'dist',
       assets: 'dist',
-      fallback: 'index.html', // enables clean SPA routing on Cloudflare
+      fallback: 'index.html',
       precompress: false
     }),
-    trailingSlash: 'always',  // removes the ugly #/ from URLs
-    prerender: {
-      entries: ['*']          // optional but recommended – makes pages real HTML
-    }
+    prerender: { entries: ['*'] },
+    trailingSlash: 'never'
   }
 };
