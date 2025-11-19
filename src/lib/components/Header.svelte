@@ -20,17 +20,17 @@
             <!-- Desktop Nav -->
             <div class="hidden md:flex items-center space-x-8">
                 <a
-                    href="#/plum-candy"
+                    href="/plum-candy"
                     class="text-slate-600 hover:text-indigo-600 font-medium transition-colors"
                     >Plum Candy</a
                 >
                 <a
-                    href="#/great-gatsby"
+                    href="/great-gatsby"
                     class="text-slate-600 hover:text-indigo-600 font-medium transition-colors"
                     >The Great Gatsby</a
                 >
                 <a
-                    href="#/candide"
+                    href="/candide"
                     class="text-slate-600 hover:text-indigo-600 font-medium transition-colors"
                     >Candide</a
                 >
@@ -80,17 +80,17 @@
         <div class="md:hidden bg-white border-t border-slate-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                    href="#/plum-candy"
+                    href="/plum-candy"
                     class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50"
                     >Plum Candy</a
                 >
                 <a
-                    href="#/great-gatsby"
+                    href="/great-gatsby"
                     class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50"
                     >The Great Gatsby</a
                 >
                 <a
-                    href="#/candide"
+                    href="/candide"
                     class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50"
                     >Candide</a
                 >

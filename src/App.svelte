@@ -14,17 +14,39 @@
   import GatsbyPage from "./lib/components/GatsbyPage.svelte";
   import CandidePage from "./lib/components/CandidePage.svelte";
 
-  let currentRoute = window.location.hash || "#/";
+  let currentRoute = window.location.pathname;
 
   onMount(() => {
-    const handleHashChange = () => {
-      currentRoute = window.location.hash || "#/";
+    const handlePopState = () => {
+      currentRoute = window.location.pathname;
       window.scrollTo(0, 0);
     };
 
-    window.addEventListener("hashchange", handleHashChange);
+    const handleLinkClick = (e) => {
+      const anchor = e.target.closest('a');
+      if (anchor && anchor.href && anchor.href.startsWith(window.location.origin)) {
+        const path = anchor.pathname;
+        // Ignore if it's an external link or a hash link on the same page (unless it's a route)
+        if (anchor.target === '_blank') return;
+        
+        // If it's a route we handle, prevent default and push state
+        // We'll assume all local non-hash links are routes for now, or specific ones
+        // Actually, let's just check if it matches our known routes or is root
+        const knownRoutes = ['/', '/plum-candy', '/great-gatsby', '/candide'];
+        if (knownRoutes.includes(path)) {
+            e.preventDefault();
+            history.pushState(null, '', path);
+            handlePopState();
+        }
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    document.addEventListener("click", handleLinkClick);
+    
     return () => {
-      window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("popstate", handlePopState);
+      document.removeEventListener("click", handleLinkClick);
     };
   });
 </script>
@@ -32,11 +54,11 @@
 <Header />
 
 <main>
-  {#if currentRoute === "#/plum-candy"}
+  {#if currentRoute === "/plum-candy"}
     <PlumCandy />
-  {:else if currentRoute === "#/great-gatsby"}
+  {:else if currentRoute === "/great-gatsby"}
     <GatsbyPage />
-  {:else if currentRoute === "#/candide"}
+  {:else if currentRoute === "/candide"}
     <CandidePage />
   {:else}
     <Hero />

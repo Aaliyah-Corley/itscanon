@@ -73,28 +73,18 @@
 
             <div class="space-y-8">
                 <!-- Video Placeholder -->
+                <!-- Video Embed -->
                 <div
-                    class="aspect-video bg-slate-900 rounded-2xl shadow-2xl flex items-center justify-center relative overflow-hidden group cursor-pointer"
+                    class="aspect-video bg-slate-900 rounded-2xl shadow-2xl overflow-hidden"
                 >
-                    <div
-                        class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors"
-                    ></div>
-                    <div class="relative z-10 text-center">
-                        <div
-                            class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mb-4 mx-auto group-hover:scale-110 transition-transform"
-                        >
-                            <svg
-                                class="w-8 h-8 text-white ml-1"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                                ><path d="M8 5v14l11-7z" /></svg
-                            >
-                        </div>
-                        <p class="text-white font-medium">
-                            Watch Aaliyah's Story
-                        </p>
-                    </div>
-                    <!-- In a real app, this would be the YouTube embed: https://www.youtube.com/watch?v=ynHlNbALwhc -->
+                    <iframe
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/ynHlNbALwhc"
+                        title="Aaliyah's Story"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
                 </div>
 
                 <div
