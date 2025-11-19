@@ -6,7 +6,7 @@ export default {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: '200.html',
+      fallback: '200.html',   // this enables SPA mode (important!)
       precompress: false
     })
   },
