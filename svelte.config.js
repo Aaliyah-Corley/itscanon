@@ -6,7 +6,7 @@ export default {
         adapter: adapter({
             pages: 'build',
             assets: 'build',
-            fallback: '200.html',   // ← THIS LINE IS THE ONE THAT FIXES THE DASHES
+            fallback: 'index.html',   // ← THIS is the magic one for Cloudflare
             precompress: false
         })
     },
