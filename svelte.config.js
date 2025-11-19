@@ -1,8 +1,16 @@
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-/** @type {import("@sveltejs/vite-plugin-svelte").SvelteConfig} */
 export default {
-  // Consult https://svelte.dev/docs#compile-time-svelte-preprocess
-  // for more information about preprocessors
-  preprocess: vitePreprocess(),
-}
+  kit: {
+    adapter: adapter({
+      // These two lines are the important ones for SPA mode (most sites)
+      pages: 'build',
+      assets: 'build',
+      fallback: '200.html', // or 'index.html' if you prefer
+      precompress: false,
+      strict: true
+    })
+  },
+  preprocess: vitePreprocess()
+};
