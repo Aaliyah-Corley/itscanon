@@ -2,13 +2,17 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
+  preprocess: vitePreprocess(),
   kit: {
     adapter: adapter({
-      pages: 'dist',      // ← changed to dist
-      assets: 'dist',     // ← changed to dist
-      fallback: 'index.html',
+      pages: 'dist',          // Vite outputs here by default
+      assets: 'dist',
+      fallback: 'index.html', // enables clean SPA routing on Cloudflare
       precompress: false
-    })
-  },
-  preprocess: vitePreprocess()
+    }),
+    trailingSlash: 'always',  // removes the ugly #/ from URLs
+    prerender: {
+      entries: ['*']          // optional but recommended – makes pages real HTML
+    }
+  }
 };
