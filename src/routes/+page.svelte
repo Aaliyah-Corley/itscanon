@@ -1,30 +1,29 @@
 <script>
-  import { page } from '$app/stores';
-  import { goto } from '$app/navigation';
-  import { browser } from '$app/environment';
-  
-  let query = '';
-  let result = null;
+  import { page } from "$app/stores";
+  import { browser } from "$app/environment";
 
-  // Auto-load from URL when someone shares a link like https://itscanon.com/plum-candy
-  $: if (browser && $page.url.pathname.slice(1)) {
-    query = $page.url.pathname.slice(1);
+  let query = "";
+  let result = "";
+
+  // Auto-load result if someone opens a shared link like /plum-candy
+  $: if (browser && $page.url.pathname !== "/") {
+    query = decodeURIComponent($page.url.pathname.slice(1));
     checkCanon();
   }
 
   function checkCanon() {
     if (!query.trim()) {
-      result = null;
+      result = "";
       return;
     }
-    
-    // ←←← PUT YOUR CANON LOGIC HERE (replace this with your real function) ←←←
-    result = query.split('').reverse().join('') + ' canon';   // placeholder example
+
+    // ←←← YOUR REAL CANON LOGIC GOES HERE (replace the line below) ←←←
+    result = query.toUpperCase() + " CANON FIXED";   // placeholder – put your actual code
     // ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
 
-    // Update URL cleanly so people can share the link (no page reload!)
+    // Clean URL update – NO HASH EVER
     if (browser) {
-      history.replaceState({}, '', `/${query}`);
+      history.replaceState({}, "", "/" + encodeURIComponent(query));
     }
   }
 </script>
