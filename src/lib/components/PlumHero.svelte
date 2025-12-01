@@ -30,6 +30,9 @@
                     class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
                 >
                     <button
+                        onclick={() =>
+                            (window.location.href =
+                                "https://aaliyah.com.br/plum-candy")}
                         class="px-8 py-4 rounded-full bg-purple-600 text-white font-bold text-lg hover:bg-purple-700 transition-all shadow-xl shadow-purple-900/20 hover:shadow-2xl hover:-translate-y-1 cursor-pointer"
                     >
                         Read the First Chapter

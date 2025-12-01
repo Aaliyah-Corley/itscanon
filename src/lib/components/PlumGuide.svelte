@@ -117,8 +117,8 @@
                         <li>
                             <strong class="text-slate-900 block mb-1"
                                 >The Nature of Choice:</strong
-                            > The narrator says, "Will you run? Will you fight? ...
-                            All an illusion. There's no real choice." What the heck
+                            > The narrator says, “Will you run? Will you fight? ...
+                            All an illusion. There’s no real choice.” What the heck
                             is this claptap? Freshman philosophy class?
                         </li>
                     </ul>
@@ -175,7 +175,7 @@
                             <strong class="text-slate-900 block mb-1"
                                 >Familiar Footprints:</strong
                             > What movie, show, or book does the preface make you
-                            think of? Is Plum Candy a clever homage or a shameless
+                            think of? Is *Plum Candy* a clever homage or a shameless
                             rip-off?
                         </li>
                         <li>
@@ -203,8 +203,8 @@
                         <li>
                             <strong class="text-slate-900 block mb-1"
                                 >The Grand Unified Theory of Plum Candy:</strong
-                            > In one sentence, what is this book really about? We
-                            write these down now.
+                            > In one sentence, what is this book *really* about?
+                            We write these down now.
                         </li>
                     </ul>
                 </div>
@@ -241,7 +241,7 @@
                         <li>
                             You notice that car ride up and down the mountain?
                             The author uses all this dramatic language—"toiled
-                            and battled," "sunlight became a blade"—but Rowan
+                            and battled," "sunlight became a blade"—but Noelan
                             isn't in any real danger. The style is all over the
                             place from poetic to sentence fragments. What's up
                             with that?
@@ -278,7 +278,7 @@
                             metaphors in this chapter that actually worked for
                             you?
                         </li>
-                        <li>What's up with the cat? Why bother?</li>
+                        <li>What’s up with the cat? Why bother?</li>
                     </ul>
                 </div>
             </div>
@@ -293,62 +293,63 @@
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="text-sm text-slate-600 space-y-4">
                         <p>
-                            Let's take a look at how Rowan interacts with the
+                            Let’s take a look at how Noelan interacts with the
                             Innkeeper. For example:
                         </p>
                         <div
                             class="bg-white p-4 rounded border border-purple-100 italic"
                         >
-                            <p>"Rowan. Just Rowan."</p>
+                            <p>“Noelan. Just Noelan.”</p>
                             <p class="mt-2">
-                                "Enjoy your stay, Just Rowan," the innkeeper
-                                said, "and if you need anything — advice,
+                                “Enjoy your stay, Just Noelan,” the innkeeper
+                                said, “and if you need anything — advice,
                                 directions, a good cup of joe — you know where
-                                to find me."
+                                to find me.
                             </p>
                         </div>
                         <p>
-                            What does how Rowan handles the people he meets
+                            What does how Noelan handles the people he meets
                             there (and earlier) say about him? And this
                             Innkeeper —oddball, typical small town yokel, or
                             super sus?
                         </p>
                     </div>
                     <div class="text-sm text-slate-600 space-y-4">
-                        <p>Now let's look at this exchange:</p>
+                        <p>Now let’s look at this exchange:</p>
                         <div
                             class="bg-white p-4 rounded border border-purple-100 italic text-xs"
                         >
                             <p>
-                                Rowan chuckled and exchanged a glance with
-                                Lawson. "No jail. Not yet."
+                                Noelan chuckled and exchanged a glance with
+                                Lawson. “No jail. Not yet.”
                             </p>
                             <p class="mt-2">
-                                Relief softened Bennet's face. Bound hands rose
-                                hopeful, pathetic but hopeful. "Then... can I
-                                make tracks?"
+                                Relief softened Bennet’s face. Bound hands rose
+                                hopeful, pathetic but hopeful. “Then... can I
+                                make tracks?”
                             </p>
                             <p class="mt-2">
-                                "Not so fast." Lawson turned to face him. "How
-                                exactly are you planning on getting that money?"
+                                “Not so fast.” Lawson twisted in his seat to
+                                look back at him. “How exactly are you planning
+                                on getting that money?”
                             </p>
                             <p class="mt-2">
-                                Rowan didn't say anything and simply looked at
+                                Noelan didn’t say anything and simply glared at
                                 him through the rearview mirror.
                             </p>
                             <p class="mt-2">
-                                "Suppose I could get my piece back?" he
-                                contemplated, "It'd still have time to—"
+                                “Suppose I could get my piece back?” he muttered
+                                after a moment. “I’d still have time to—”
                             </p>
                             <p class="mt-2">
-                                "Get serious," Lawson said. "You really think
-                                we'd let you go rob someone else?"
+                                “Get serious,” Lawson said. “You really think
+                                we’d let you go rob someone else?”
                             </p>
                             <p class="mt-2">
-                                Rowan scoffed. "Not a chance, jackass."
+                                Noelan scoffed. “Not a chance, jackass.”
                             </p>
                             <p class="mt-2">
-                                "But my fiancée!" Bennet's voice cracked.
+                                “But my fiancée!” Bennet’s voice cracked.
                             </p>
                         </div>
                         <p>What does this say about the characters?</p>
@@ -364,7 +365,7 @@
                     Forward Momentum (Pacing & The Hook)
                 </h4>
                 <p class="text-slate-700 text-sm">
-                    How's the pacing? What are the hooks? Do you want to know
+                    How’s the pacing? What are the hooks? Do you want to know
                     what happens next? Or do you already know?
                 </p>
             </div>
